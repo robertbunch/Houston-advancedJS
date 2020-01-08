@@ -1,0 +1,32 @@
+
+<div>
+    <button class="btn">Click me!</button>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+    // const clickFunction = ()=>{
+    //     console.log("Button was clicked!!!")
+    // }
+    $('.btn').click((e)=>{
+        console.log("Button was clicked!!!")
+        console.dir(e.target);
+    })
+    // document.querySelector('.btn').addEventListener('click',()=>{
+    //     console.log("Button was clicked!")
+    // })
+
+// Somewhere in the jquery.min.js is this...
+// window.$ = {};
+// $.click = (codeDevWantsToRunWhenClickHappens)=>{
+//     // do some stuff
+//     // create some variables
+//     // fetch some data
+//     // now, i'm ready to run your code
+//     codeDevWantsToRunWhenClickHappens(event)
+// }
+
+</script>
