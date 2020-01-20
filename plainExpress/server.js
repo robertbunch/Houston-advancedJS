@@ -5,7 +5,7 @@ const app = express();
 const helmet = require('helmet');
 app.use(helmet());
 
-app.get('/',(req,res)=>{
+app.get('/',(req,res,next)=>{
     res.send("Test")
 })
 
@@ -20,3 +20,13 @@ app.listen(8080);
 // ---
 // res.json
 // <--------Response goes out
+
+
+router.post('*',(req, res, next)=>{
+    // check to see if this user is valid
+    // if not valid:
+        // res.json()
+    // if valid: 
+        // res.locals.uid = ...
+        // next()
+})
