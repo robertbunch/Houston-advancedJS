@@ -6,11 +6,12 @@ import NavBar from './NavBar';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import UploadLocation from './UploadLocation'
 
+
 ReactDOM.render(
     <Router>
-            <Route path = "/" component={NavBar} />
-            <Route exact path = "/" component={App} />
-            <Route exact path = "/new-location" component={UploadLocation} />
+        <Route path = "/" component={NavBar} />
+        <Route exact path = "/" component={App} />
+        <Route exact path = "/new-location" component={UploadLocation} />
     </Router>, 
     document.getElementById('root')
 );
